@@ -57,7 +57,7 @@ public class ExcelReader {
 
         // Loops - outer loop always takes care of rows
         for (int row=1; row<getRowCount(); row++){
-            //creating a map for every row
+            // Creating a map for every row
             Map<String, String> map = new LinkedHashMap<>();
 
             for (int col=0; col<getColsCount(row); col++){

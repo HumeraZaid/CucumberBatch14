@@ -69,10 +69,10 @@ public class AddEmployeeSteps extends CommonMethods {
     public void user_adds_multiple_employees_and_verify_they_are_added_successfully(DataTable dataTable) throws InterruptedException {
         List<Map<String, String>> employeeNames = dataTable.asMaps();
 
-        // Getting the map from list of maps
+        // Getting the map from the list of maps
         for (Map<String, String> employee:employeeNames
         ) {
-            // Getting the  keys and values from every map
+            // Getting the keys and values from every map
             String firstNameValue = employee.get("firstName");
             String middleNameValue = employee.get("middleName");
             String lastNameValue = employee.get("lastName");
@@ -124,7 +124,7 @@ public class AddEmployeeSteps extends CommonMethods {
             Thread.sleep(2000);
             System.out.println("click taken on emp list option");
 
-            //to search the employee, we use emp id what we captured from attribute
+            // To search the employee, we use emp ID that we captured from attribute
             sendText(employeeList.empSearchIdField, empIdValue);
             click(employeeList.searchButton);
 

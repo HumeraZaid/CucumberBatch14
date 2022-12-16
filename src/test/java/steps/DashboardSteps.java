@@ -27,12 +27,12 @@ public class DashboardSteps extends CommonMethods {
             actualTabs.add(ele.getText());
         }
 
-        //printing the text for both feature file and from application
+        // Printing the text for both feature file and from application
         System.out.println(expectedTabs);
         System.out.println(actualTabs);
 
-        //.equals is the method we use to compare 2 lists together
-        //assertTrue is a boolean condition which returns true if condition is satisfy
+        // .equals is the method we use to compare 2 lists together
+        // assertTrue is a boolean condition, which returns true if condition is satisfied
         Assert.assertTrue(expectedTabs.equals(actualTabs));
     }
 }
