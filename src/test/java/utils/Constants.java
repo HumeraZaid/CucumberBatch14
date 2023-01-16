@@ -11,5 +11,5 @@ public class Constants {
     public static final String TESTDATA_FILEPATH =
             System.getProperty("user.dir") + "/src/test/resources/testdata/batch14excel.xlsx";
 
-    public static final String SCREENSHOT_FILEPATH =   System.getProperty("user.dir") + "/screenshots/";
+    public static final String SCREENSHOT_FILEPATH = System.getProperty("user.dir") + "/screenshots/";
 }

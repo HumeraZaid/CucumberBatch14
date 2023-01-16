@@ -134,7 +134,7 @@ public class AddEmployeeSteps extends CommonMethods {
                     driver.findElements(By.xpath("//*[@id='resultTable']/tbody/tr"));
 
 
-            for (int i =0; i<rowData.size(); i++){
+            for (int i = 0; i<rowData.size(); i++){
                 System.out.println("I am inside the loop and worried about josh");
                 // Getting the text of every element from here and storing it into string
                 String rowText = rowData.get(i).getText();
